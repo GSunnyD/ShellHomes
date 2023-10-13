@@ -1,2 +1,2 @@
 # ShellHomes
-The PC side webpage that imitates the homepage of Shell Network mainly adopts jQuery technology
+仿贝壳找房网(基于HTML+CSS+jQuery)
