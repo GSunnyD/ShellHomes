@@ -1,0 +1,70 @@
+    /* 预留loadApp空白空间 */
+    .clear {
+      height: 130px;
+    }
+    /* 只有屏幕设备且最大高度570px的范围内 loadAPP看不见 */
+    @media only screen and (max-height: 570px) {
+      .loadApp {
+        display: none;
+      }
+    }
+
+    .loadApp {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 130px;
+      background-color: #fff;
+    }
+
+    .loadApp .wrapper {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .loadApp .app-interface {
+      position: relative;
+      bottom: 50px;
+      width: 190px;
+    }
+
+    .loadApp .app-interface img {
+      width: 100%;
+    }
+
+    .loadApp .load-des {
+      margin-left: 30px;
+    }
+
+    .loadApp .load-des .title-big {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 40px 0 12px;
+      color: #101d37;
+    }
+
+    .loadApp .load-des .title-small {
+      font-size: 13px;
+      color: #9399A5;
+      margin-top: 8px;
+    }
+
+    .loadApp .code {
+      margin: 22px 0 0 63px;
+    }
+
+    .loadApp .code img {
+      width: 88px;
+      height: 88px;
+    }
+
+    .loadApp .cancel {
+      margin: 22px 0 0 41px;
+    }
+
+    .loadApp .cancel img {
+      width: 15px;
+      height: 15px;
+    }

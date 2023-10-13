@@ -1,0 +1,138 @@
+    /* 板块展示 - 房屋内容具体展示 */
+     /* 二手好房板块 */
+     .recommend_plate .house_list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .recommend_plate .house_list li .house_display {
+      display: inline-block;
+      width: 265px;
+      cursor: pointer;;
+    }
+
+    .recommend_plate .house_list li .house_display .album {
+      position: relative;
+      width: 265px;
+      height: 205px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .recommnd_plate .house_list li .house_display .album img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .recommend_plate .house_list li .house_display .album .vr_item {
+      position: absolute;
+      left: 8px;
+      bottom: 10px;
+      width: 45px;
+      height: 45px;
+      background: url(../img/vrlogo@2x.png) no-repeat;
+      background-size: 45px 45px;
+    }
+
+    .recommend_plate .house_list li .house_display .album .goodhouse {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 86px;
+      height: 30px;
+      background: url(../img/goodhouse.png);
+      background-size: 100% 100%;
+    }
+
+    .recommend_plate .house_list li .house_display .name {
+      margin-top: 16px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #222;
+    }
+
+    .recommend_plate .house_list li .house_display .info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      line-height: 16px;
+    }
+
+    .recommend_plate .house_list li .house_display .info .left {
+      font-size: 12px;
+      color: #616669;
+    }
+
+    .recommend_plate .house_list li .house_display .info .right {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fa5741;
+    }
+
+    /* 小区精选板块 */
+    .recommend_plate .community_list .community_display {
+      width: 265x;
+      cursor: pointer;
+    }
+    .recommend_plate .community_list .community_display .album{
+      overflow: hidden;
+    }
+    .recommend_plate .community_list .community_display .album img{
+      width: 100%;
+      height: 205px;
+      border-radius: 4px;
+      transition: all 0.7s ease-in-out;
+    }
+    .recommend_plate .community_list .community_display .album img:hover{
+      transform: scale(1.05);
+    
+    }
+    .recommend_plate .community_list .community_display .info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      height: 25px;
+      line-height: 25px;
+
+    }
+    .recommend_plate .community_list li .community_display .info .left{
+      font-size: 18px;
+      font-weight: 600;
+      color: #101d37;
+    }
+    .recommend_plate .community_list li .community_display .info .right{
+      font-size: 16px;
+      font-weight: 600;
+      color: #fa5741;
+    }
+    .recommend_plate .community_list li .community_display .year{
+      line-height: 20px;
+      margin-top: 5px;
+      font-size: 12px;
+      color: #9399a5;
+    }
+
+    /* 品质租房板块 */
+    .recommend_plate .rent_list li .rent_display{
+      display: inline-block;
+      width: 265px;
+    }
+    .recommend_plate .rent_list li .rent_display .album{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 205px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .recommend_plate .rent_list li .rent_display .name{
+      height: 50px;
+      margin-top: 15px;
+      line-height: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #101d37;
+    }

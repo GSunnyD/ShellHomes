@@ -1,0 +1,111 @@
+    /* footer部分 */
+    /* footer-title部分 */
+    .footer {
+      width: 100%;
+      min-height: 437px;
+    }
+    .footer .wrapper{
+      width: 1150px;
+      margin: 0 auto;
+    }
+    .footer .wrapper .ft-title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 32px;
+      font-size: 16px;
+      font-weight: 700;
+      border-top: 1px solid  #e4e6f0;
+    }
+    .footer .wrapper .ft-title .ft-left .title-list{
+      display: flex;
+      align-items: center;
+    }
+    .footer .wrapper .ft-title .ft-left .title-list .item{
+      margin: 0 20px 20px 0;
+      padding: 0 25px;
+      line-height: 54px;
+      text-align: center;
+      border: .5px solid #d9d6d6;
+    }
+    .footer .wrapper .ft-title .ft-left .title-list .item a{
+      color: #222;
+    }
+    .footer .wrapper .ft-title .ft-right{
+      color: #3072f6;
+    }
+    .footer .wrapper .ft-title .ft-right:hover{
+      text-decoration: underline;
+    }
+    /* nav-link部分 */
+    .footer .wrapper .nav-link {
+      width: 1000px;
+    }
+    .footer .wrapper .nav-link .btn span{
+      display: inline-block;
+      font-size: 14px;
+      color: #707787;
+      margin: 0 20px 12px 0;
+      cursor: pointer;
+    }
+    .footer .wrapper .nav-link .btn span.active{
+      color: #101d37;
+    }
+
+    /* 列表展示区 */
+    .footer .wrapper .nav-link .link-list .list{
+      display: none;
+    }
+    .footer .wrapper .nav-link .link-list .list:first-child{
+      display: block;
+    }
+    .footer .wrapper .nav-link .link-list .list a{
+      display: inline-block;
+      font-size: 14px;
+      color: #b7bbc3;
+      margin: 0 10px 10px 0;
+    }
+    .footer .wrapper .nav-link .link-list .list a:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    /* partner-logo 部分 */
+    .footer .wrapper .partner-logo{
+      display: flex;
+      flex-wrap: wrap;
+      width: 1150px;
+      margin-top: 24px;
+    }
+
+    .footer .wrapper .partner-logo a {
+      display: inline-block;
+      margin: 0 40px 20px 0;
+    }
+
+    .footer .wrapper .partner-logo a img {
+      height: 40px;
+    }
+    .footer .wrapper .bottom{
+      /* display: flex; */
+      width: 1150px;
+      margin-top: 24px;
+      margin-bottom: 7px;
+      line-height: 20px;
+      font-size: 14px;
+      color: #b7bbc3;
+    }
+    .footer .wrapper .bottom a{
+      color: #b7bbc3;
+    }
+    .footer .wrapper .bottom a:hover{
+      text-decoration: underline;
+    }
+    .footer .wrapper .bottom i {
+      position: relative;
+      vertical-align: top;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/beian.png) no-repeat;
+    }
