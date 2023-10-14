@@ -30,14 +30,16 @@ $(function () {
   let count = 0
   const $firstItem = $noticeBannerItem.eq(0).clone(true)
   $noticeBannerList.append($firstItem)
-  console.log($firstItem)
+  const $newNoticeBannerItem = $('.notice-banner .item')
   setInterval(function() {
     count++
-    const $newNoticeBannerItem = $('.notice-banner .item')
     $newNoticeBannerItem.css('transform', `translateY(${-20*count}px)`).css('transition', 'all 2s ease-in')
-    if(count === $newNoticeBannerItem.length){
+    if(count === $newNoticeBannerItem.length -1){
+      // 变换动画具有2秒的过渡时间，而循环的周期是3秒。因此，必须使用 setTimeout 函数，不然if 语句块中的代码会在过渡动画还没完成的情况下立即执行，导致过渡效果无法完全展现。
+      setTimeout(function() {
+        $newNoticeBannerItem.css('transform', 'translateY(0px)').css('transition', 'none');
+      }, 2000);
       count = 0
-      $newNoticeBannerItem.css('transform', 'translateY(0px)').css('transition', 'none')
     }
   }, 3000)
   
@@ -137,7 +139,6 @@ $(function () {
 
   // 初始化页面
   NetReq.get(Netconfig.baseURL + NetAPI.Home_Page).then(res => {
-    curLocation = res.curLocation
     // 渲染头部地址
     renderHeaderAddr(res.curLocation)
     // 渲染topBar
@@ -188,7 +189,7 @@ $(function () {
 
   function renderSearchList(searchList = [], type = 0) {
     const String = type === 0 ? '热门搜索': '你可能在找'
-    // 奖结果渲染页面
+    // 将结果渲染页面
     let htmlString = `<li class="item hot-name">${String}</li>`
     searchList.forEach(item => {
       htmlString += `<li class="item ">${item.title}</li>`

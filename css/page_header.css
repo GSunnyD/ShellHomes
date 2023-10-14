@@ -289,7 +289,6 @@
 /* 公告轮播显示消息 */
 .header .wrapper .notice-banner {
   display: flex;
-  position: relative;
   align-items: center;
   position: absolute;
   bottom: 20px;
